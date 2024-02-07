@@ -1,0 +1,109 @@
+.all {
+    .navall {
+        padding: 30px 0;
+        position: relative;
+        width: 100%;
+        background-image: url("https://dentnis.com/wp-content/uploads/2019/12/dentnis-purple-background.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center;
+    }
+
+    .subhover {
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+        & h1{
+            padding: 10px;
+        }
+    }
+
+    .wraparrall {
+        /*display: flex;*/
+        /*float: right;*/
+        margin-top: 10px;
+        padding-left: 78.2px;
+        padding-right: 78px;
+    }
+
+    .about {
+        color: #d14891;
+        margin-bottom: -10px;
+        line-height: 34px;
+    }
+
+    & swiper-container {
+        width: 50%;
+        height: 50%;
+        float: right !important;
+    }
+
+    & swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & swiper-slide img {
+        display: block;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    & ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    & li {
+        margin-bottom: 5px;
+    }
+
+    .iframe {
+        padding-left: 78.2px;
+        padding-right: 78px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        flex-wrap: wrap;
+    }
+
+    .wraparrall {
+        display: flex;
+    }
+
+    .swiper-slide {
+        width: 100% !important
+    ;
+    }
+
+    & swiper-container {
+        width: 100% !important;
+        /*height: 50%;*/
+        float: none;
+        /*clear: right;*/
+    }
+    & swiper-container >div{
+        width: 100% !important;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    .wraparrall {
+        /*padding: 20px 10px ;*/
+        max-width: 100% !important;
+    }
+
+    & iframe{
+        width: 40%;
+    }
+}

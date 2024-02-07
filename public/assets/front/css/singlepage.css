@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.single-page{
+    width: 100%;
+    .top {
+        width: 100%;
+        height: 350px;
+        background: url("https://dentnis.com/wp-content/uploads/2019/12/dentnis-purple-background.jpg");
+        & p, & h1{
+            position: relative;
+            /*left: 2%;*/
+            margin-left: 100px;
+            top: 35%;
+            font-family: Quicksand, serif;
+            color: #FFFFFF;
+        }
+        & img{
+            position: relative;
+            top: -10%;
+            left: 62.5%;
+            width: 500px;
+            height: 333px;
+        }
+    }
+
+    .container {
+        width: auto;
+        height: max-content;
+        margin: 100px 200px 10px;
+        & h2{
+            color: #d14891;
+            font-family: "Helvetica Neue", serif;
+        }
+    }
+
+    .comment {
+        width: auto;
+        margin: 50px 40px;
+        padding-top: 30px;
+        border-top: 1px solid #d9d9d9;
+        #comment-form label {
+            font-size: 16px;
+        }
+        #comment {
+            width: 100%;
+            height: 200px;
+        }
+        .comment-input {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            justify-content: space-between;
+            & input {
+                width: 650px;
+            }
+        }
+        .g-recaptcha {
+            margin-top: 30px;
+        }
+        & button {
+            background-color: #2c95eb;
+            color: #FFFFFF;
+            left: 90%;
+            width: 10%;
+            border-radius: 10px;
+        }
+    }
+
+    .others-section {
+        width: 100%;
+        margin: 0 auto;
+        height: max-content;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding-top: 30px;
+        & h1{
+            color: #d14891;
+            font-family: "Helvetica Neue", serif;
+        }
+        .a {
+            width: auto;
+        }
+        .cols {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 30px 0 100px;
+            & div{
+                width: 100%;
+                border: 1px solid #d9d9d9;
+                background-color: #ffffff;
+                & .article-title {
+                    padding: 10px;
+                    color: #d14891;
+                    font-family: "Helvetica Neue", serif;
+                    font-size: 20px;
+                }
+                & img {
+                    max-width: 400px;
+                    min-width: 400px;
+                    height: 240px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .sub-footer {
+        border-top: 1px solid #d14891;
+        height: 100px;
+        padding-top: 40px;
+        .sub-footer-content{
+            width: 20%;
+            font-family: "Helvetica Neue", serif;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 50px;
+            & i{
+                padding-top: 3px;
+                color: #ada1aa;
+            }
+            & span{
+                color: #a64c94;
+            }
+        }
+    }
+}
+
+
+/*@media (max-width: 768px) {*/
+/*    .single-page .top h1,*/
+/*    .single-page .top p {*/
+/*        margin-left: 50px !important;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 768px) {
+    .single-page {
+        .container {
+            margin: 20px auto;
+        }
+        .top {
+            align-items: self-start;
+            text-align: center;
+            justify-content: center;
+            padding: 30px;
+            overflow-x: visible;
+
+            & p {
+                left: -4%;
+                top: 15%;
+                display: flex;
+                justify-content: center;
+            }
+
+            & h1 {
+                font-size: 24px ;
+                top: -10%;
+                left: -4%;
+                overflow-x: visible;
+
+            }
+
+            & img {
+                /*display: none;*/
+                top: 20%;
+                left: 25%;
+                width: 40%;
+                height: auto;
+                transform: translate(-50%,-20%);
+            }
+        }
+
+        .container-singlepage {
+            width: 90%;
+            margin: 30% auto 20px;
+        }
+
+        .others-section {
+            /*width: 100%;*/
+            /*margin: 0 auto;*/
+            /*height: max-content;*/
+            /*background-color: #f7f7f7;*/
+            /*text-align: center;*/
+            /*padding-top: 30px;*/
+
+            /*& h1 {*/
+            /*    color: #d14891;*/
+            /*    font-family: "Helvetica Neue", serif;*/
+            /*}*/
+
+            .cols {
+                width: 90%;
+                /*display: flex;*/
+                flex-direction: column;
+                /*justify-content: space-around;*/
+                /*margin: 30px auto 100px;*/
+
+
+                & a {
+                    width: 100%;
+                    margin: 10px;
+                    /*border: 1px solid #d9d9d9;*/
+                    /*background-color: #ffffff;*/
+
+                    & .article-title {
+                        padding: 30px;
+                        text-align: left;
+                        color: #d14891;
+                        font-family: "Helvetica Neue", serif;
+                        font-size: 20px;
+                    }
+
+                    & img {
+                        width: 100%;
+                        height: 240px;
+                    }
+                }
+
+                & a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .sub-footer {
+            border-top: 1px solid #d14891;
+            height: 100px;
+            padding-top: 40px;
+
+            .sub-footer-content {
+                width: 20%;
+                font-family: "Helvetica Neue", serif;
+                font-size: 16px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-left: 50px;
+
+                & i {
+                    padding-top: 3px;
+                    color: #ada1aa;
+                }
+
+                & span {
+                    color: #a64c94;
+                }
+            }
+        }
+    }
+
+
+}
