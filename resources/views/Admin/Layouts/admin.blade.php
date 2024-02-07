@@ -6,10 +6,6 @@
     <title>Admin Panel</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('assets/admin/admin.css') }}">
-    <!-- include libraries(jQuery, bootstrap) -->
-{{--    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">--}}
-
-
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 </head>
 <body>
@@ -21,27 +17,7 @@
             </a>
         </div>
         @include('Admin.partials.sidebar')
-
-{{--        <ul class="list-unstyled components">--}}
-{{--            <li>--}}
-{{--                <a href="{{ route('admin.index') }}">Dashboard</a>--}}
-{{--            </li>--}}
-{{--            <li>--}}
-{{--                <a href="{{ route('admin.slider.index') }}">Slider Images</a>--}}
-{{--            </li>--}}
-{{--            <li>--}}
-{{--                <a href="{{ route('admin.quotes.index') }}">Quotes</a>--}}
-{{--            </li>--}}
-{{--            <li>--}}
-{{--                <a href="{{ route('admin.sponsor.index') }}">Sponsor</a>--}}
-{{--            </li>--}}
-{{--            <li>--}}
-{{--                <a href="{{ route('admin.youtube.index') }}">Youtube</a>--}}
-{{--            </li>--}}
-{{--        </ul>--}}
     </nav>
-
-
     <div id="content">
         @yield('content')
     </div>
